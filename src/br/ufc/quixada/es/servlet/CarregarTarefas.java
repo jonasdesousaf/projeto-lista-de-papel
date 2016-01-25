@@ -1,6 +1,5 @@
 package br.ufc.quixada.es.servlet;
 
-import java.beans.Encoder;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -15,11 +14,9 @@ import javax.servlet.http.HttpSession;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import br.ufc.quixada.es.DAOs.TarefaDAO;
 import br.ufc.quixada.es.DAOs.UsuarioDAO;
 import br.ufc.quixada.es.modelo.Tarefa;
 import br.ufc.quixada.es.modelo.Usuario;
-import br.ufc.quixada.es.util.DataSerializer;
 import br.ufc.quixada.es.util.EstrategiaExclusaoJSON;
 
 @WebServlet("/CarregarTarefas")

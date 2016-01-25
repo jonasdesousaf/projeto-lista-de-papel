@@ -31,6 +31,4 @@ public class TesteListaDePapel {
 		
 		assertEquals(true, resposta);
 	}
-	
-	
 }

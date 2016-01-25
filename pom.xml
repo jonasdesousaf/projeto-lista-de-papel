@@ -5,6 +5,9 @@
 	<artifactId>ListaDePapel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
 		<testSourceDirectory>teste</testSourceDirectory>
 		<sourceDirectory>src</sourceDirectory>
@@ -17,6 +20,11 @@
 			</resource>
 		</resources>
 		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
